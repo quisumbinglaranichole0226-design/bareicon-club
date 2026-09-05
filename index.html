@@ -32,10 +32,10 @@
     .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
     .container { width: min(1180px, calc(100% - 42px)); margin-inline: auto; }
 
-    .site-header { position: fixed; z-index: 50; top: 18px; left: 50%; width: min(1180px, calc(100% - 42px)); display: flex; align-items: center; justify-content: space-between; padding: 11px 13px 11px 20px; border: 1px solid rgba(245,241,233,.3); border-radius: 999px; color: var(--cream); background: rgba(58,24,13,.68); box-shadow: 0 12px 40px rgba(33,28,25,.14); backdrop-filter: blur(14px); transform: translateX(-50%); transition: background .25s, top .25s; }
+    .site-header { position: fixed; z-index: 50; top: 18px; left: 50%; width: min(1180px, calc(100% - 42px)); display: flex; align-items: center; justify-content: space-between; padding: 8px 12px 8px 18px; border: 1px solid rgba(245,241,233,.3); border-radius: 999px; color: var(--cream); background: rgba(58,24,13,.68); box-shadow: 0 12px 40px rgba(33,28,25,.14); backdrop-filter: blur(14px); transform: translateX(-50%); transition: background .25s, top .25s; }
     .site-header.scrolled { top: 9px; background: rgba(58,24,13,.92); }
     .logo { display: flex; align-items: center; flex-shrink: 0; }
-    .header-logo { display: block; width: clamp(175px, 18vw, 225px); height: auto; }
+    .header-logo { display: block; width: clamp(190px, 18vw, 220px); height: auto; }
     .footer-logo { display: block; width: 210px; max-width: 100%; height: auto; }
     .nav-links { display: flex; align-items: center; gap: 27px; font-size: .75rem; font-weight: 600; }
     .nav-links > a:not(.nav-cta) { position: relative; }
@@ -153,7 +153,7 @@
 
     @media (max-width: 560px) {
       .container, .site-header { width: calc(100% - 28px); }
-      .header-logo { width: 175px; }
+      .header-logo { width: 180px; }
       .hero { min-height: 700px; align-items: flex-end; padding-bottom: 30px; background-position: 62% center; }
       .hero-card { padding: 28px 22px; border-radius: 2px 24px 24px 24px; }
       h1 { font-size: clamp(2.65rem, 13.7vw, 3.8rem); }
