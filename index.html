@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bareicon Club | Creative Digital Studio</title>
-  <meta name="description" content="Bareicon Club creates modern websites, digital menus, branding, marketing, and content for small brands ready to make a bigger impression.">
+  <meta name="description" content="Bareicon Club creates modern websites, digital menus, branding, marketing, and content for growing brands ready to make a bigger impression.">
   <meta name="theme-color" content="#3a180d">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +48,7 @@
     .menu-button { display: none; width: 41px; height: 41px; padding: 11px; border: 0; border-radius: 50%; background: var(--butter); cursor: pointer; }
     .menu-button span:not(.sr-only) { display: block; height: 1px; margin: 5px 0; background: var(--chocolate); }
 
-    .hero { min-height: 730px; display: flex; align-items: center; padding: 130px 0 70px; background: linear-gradient(90deg, rgba(32,27,24,.28), rgba(32,27,24,.02)), url('bareicon-hero.png') center/cover no-repeat; }
+    .hero { min-height: 730px; display: flex; align-items: center; padding: 130px 0 70px; background: linear-gradient(90deg, rgba(32,27,24,.18), rgba(32,27,24,.01)), url('bareicon-club-creative-hero.png') center/cover no-repeat; }
     .hero-card { width: min(500px, 100%); padding: clamp(30px, 4vw, 52px); background: var(--butter); border-radius: 3px 30px 30px 30px; box-shadow: 0 22px 65px rgba(33,28,25,.25); }
     .eyebrow { margin: 0 0 20px; font-size: .7rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
     h1, h2, h3 { margin-top: 0; font-family: "Space Grotesk", sans-serif; font-weight: 500; letter-spacing: -.045em; }
@@ -60,8 +60,9 @@
     .button-primary { color: var(--cream); background: var(--chocolate); }
     .button:hover { transform: translateY(-3px); box-shadow: 0 8px 0 rgba(58,24,13,.14); }
     .button-primary:hover { color: var(--chocolate); background: var(--coral); }
-    .button-arrow { transition: transform .25s; }
-    .button:hover .button-arrow { transform: translate(3px,-3px); }
+    .button-arrow { width: 16px; height: 16px; flex: 0 0 16px; display: block; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: transform .25s; }
+    .button:hover .button-arrow-up { transform: translate(3px,-3px); }
+    .button:hover .button-arrow-down { transform: translateY(3px); }
 
     .intro { padding: clamp(82px, 10vw, 135px) 0; color: var(--coral); text-align: center; background: var(--chocolate); }
     .intro-inner { max-width: 950px; margin: auto; }
@@ -186,27 +187,27 @@
 
   <main id="top">
     <section class="hero">
-      <div class="container"><div class="hero-card reveal"><p class="eyebrow">Creative digital studio</p><h1>Small brands deserve <em>big energy.</em></h1><p>We create modern websites, digital menus, branding, and online experiences that help growing businesses look clear, confident, and memorable.</p><div class="hero-actions"><a class="button button-primary" href="#contact"><span>Start a project</span><span class="button-arrow">↗</span></a><a class="button" href="#work"><span>See our work</span><span>↓</span></a></div></div></div>
+      <div class="container"><div class="hero-card reveal"><p class="eyebrow">Creative digital studio</p><h1>Brands deserve <em>big energy.</em></h1><p>We create modern websites, digital menus, branding, and online experiences that help growing businesses look clear, confident, and memorable.</p><div class="hero-actions"><a class="button button-primary" href="#contact"><span>Start a project</span><svg class="button-arrow button-arrow-up" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M7 5h8v8"/></svg></a><a class="button" href="#work"><span>See our work</span><svg class="button-arrow button-arrow-down" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v13M5.5 11.5 10 16l4.5-4.5"/></svg></a></div></div></div>
     </section>
 
-    <section class="intro"><div class="container intro-inner reveal"><div class="tags"><span class="tag">Websites</span><span class="tag">Menus</span><span class="tag">Branding</span><span class="tag">Marketing</span><span class="tag">Content</span></div><h2>Nothing memorable<br>is built <em>alone.</em></h2><p class="intro-copy">Bareicon Club works with small businesses to turn ideas into useful digital experiences—made collaboratively, designed thoughtfully, and built for real people.</p></div></section>
+    <section class="intro"><div class="container intro-inner reveal"><div class="tags"><span class="tag">Websites</span><span class="tag">Menus</span><span class="tag">Branding</span><span class="tag">Marketing</span><span class="tag">Content</span></div><h2>Nothing memorable<br>is built <em>alone.</em></h2><p class="intro-copy">Bareicon Club works with businesses and growing brands to turn ideas into useful digital experiences—made collaboratively, designed thoughtfully, and built for real people.</p></div></section>
 
     <section class="section services" id="services"><div class="container"><div class="section-heading reveal"><h2>What we bring<br>to the <em>Club.</em></h2><p>Flexible creative support for businesses that want their digital presence to feel as considered as everything they do offline.</p></div><div class="bento">
       <article class="service-card reveal"><div class="service-top"><span class="service-number">01</span><span class="service-icon">⌘</span></div><div><h3>Websites</h3><p>Responsive business websites and landing pages built around your goals and customers.</p></div></article>
       <article class="service-card reveal"><div class="service-top"><span class="service-number">02</span><span class="service-icon">▦</span></div><div><h3>Digital Menus</h3><p>Fast, mobile-friendly QR menus that feel polished and stay easy to browse.</p></div></article>
       <article class="service-card reveal"><div class="service-top"><span class="service-number">03</span><span class="service-icon">✎</span></div><div><h3>Branding</h3><p>Clear visual foundations that help your business feel recognizable and complete.</p></div></article>
       <article class="service-card reveal"><div class="service-top"><span class="service-number">04</span><span class="service-icon">◌</span></div><div><h3>Digital Marketing</h3><p>Practical creative support that keeps your business visible and consistent online.</p></div></article>
-      <article class="service-card reveal"><div class="service-top"><span class="service-number">05</span><span class="service-icon">↗</span></div><div><h3>SEO &amp; Content</h3><p>Helpful, search-ready content made to be useful to people—not just algorithms.</p></div></article>
+      <article class="service-card reveal"><div class="service-top"><span class="service-number">05</span><span class="service-icon"><svg class="button-arrow button-arrow-up" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M7 5h8v8"/></svg></span></div><div><h3>SEO &amp; Content</h3><p>Helpful, search-ready content made to be useful to people—not just algorithms.</p></div></article>
     </div></div></section>
 
-    <section class="section work" id="work"><div class="container"><div class="section-heading reveal"><h2>Meet the Club.</h2><p>A growing collection of websites, menus, and creative projects made for independent brands with personality.</p></div><a class="project reveal" href="https://sudsandsips.bareiconclub.com/" target="_blank" rel="noopener"><div class="project-visual"><div class="phones"><div class="phone phone-one"><div class="phone-screen"></div></div><div class="phone phone-two"><div class="phone-screen"></div></div></div></div><div class="project-copy"><p class="eyebrow">Club Member 001 · Digital Menu</p><h3>Suds &amp; Sips Café</h3><p>A modern mobile menu that makes the café’s drinks, food, and personality easy to explore from any table.</p><span class="button"><span>View the menu</span><span class="button-arrow">↗</span></span></div></a></div></section>
+    <section class="section work" id="work"><div class="container"><div class="section-heading reveal"><h2>Meet the Club.</h2><p>A growing collection of websites, menus, and creative projects made for independent brands with personality.</p></div><a class="project reveal" href="https://sudsandsips.bareiconclub.com/" target="_blank" rel="noopener"><div class="project-visual"><div class="phones"><div class="phone phone-one"><div class="phone-screen"></div></div><div class="phone phone-two"><div class="phone-screen"></div></div></div></div><div class="project-copy"><p class="eyebrow">Club Member 001 · Digital Menu</p><h3>Suds &amp; Sips Café</h3><p>A modern mobile menu that makes the café’s drinks, food, and personality easy to explore from any table.</p><span class="button"><span>View the menu</span><svg class="button-arrow button-arrow-up" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M7 5h8v8"/></svg></span></div></a></div></section>
 
     <section class="section process" id="process"><div class="container"><div class="section-heading reveal"><h2>Simple from hello<br>to <em>go live.</em></h2><p>You’ll always know what we’re working on, what we need from you, and what comes next.</p></div><div class="steps"><article class="step reveal"><span class="step-no">01</span><h3>Say hello</h3><p>Tell us about your business, your idea, and what you want the project to achieve.</p></article><article class="step reveal"><span class="step-no">02</span><h3>Shape the plan</h3><p>We define the direction, content, scope, and timeline together.</p></article><article class="step reveal"><span class="step-no">03</span><h3>Build together</h3><p>We design and refine the work with your feedback along the way.</p></article><article class="step reveal"><span class="step-no">04</span><h3>Go live</h3><p>Your new digital space launches, ready to meet your customers.</p></article></div></div></section>
 
-    <section class="contact" id="contact"><div class="container"><div class="contact-card reveal"><p class="eyebrow">Your brand could be next</p><h2>Let’s make something<br>worth noticing.</h2><p>Have a website, menu, or digital idea in mind? Tell us about it, and we’ll help you find a clear next step.</p><a class="button" href="mailto:hello@bareiconclub.com?subject=New%20Bareicon%20Club%20Project"><span>hello@bareiconclub.com</span><span class="button-arrow">↗</span></a></div></div></section>
+    <section class="contact" id="contact"><div class="container"><div class="contact-card reveal"><p class="eyebrow">Your brand could be next</p><h2>Let’s make something<br>worth noticing.</h2><p>Have a website, menu, or digital idea in mind? Tell us about it, and we’ll help you find a clear next step.</p><a class="button" href="mailto:hello@bareiconclub.com?subject=New%20Bareicon%20Club%20Project"><span>hello@bareiconclub.com</span><svg class="button-arrow button-arrow-up" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M7 5h8v8"/></svg></a></div></div></section>
   </main>
 
-  <footer><div class="container footer-inner"><a class="logo" href="#top"><span class="logo-mark"></span><span>BAREICON<b>.CLUB</b></span></a><span>Helping small brands make a bigger impression.</span><div class="footer-links"><a href="#services">Services</a><a href="#work">Work</a><a href="mailto:hello@bareiconclub.com">Email</a></div></div></footer>
+  <footer><div class="container footer-inner"><a class="logo" href="#top"><span class="logo-mark"></span><span>BAREICON<b>.CLUB</b></span></a><span>Helping brands make a bigger impression.</span><div class="footer-links"><a href="#services">Services</a><a href="#work">Work</a><a href="mailto:hello@bareiconclub.com">Email</a></div></div></footer>
 
   <script>
     const header = document.querySelector('[data-header]');
