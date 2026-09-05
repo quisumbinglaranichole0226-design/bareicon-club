@@ -34,11 +34,9 @@
 
     .site-header { position: fixed; z-index: 50; top: 18px; left: 50%; width: min(1180px, calc(100% - 42px)); display: flex; align-items: center; justify-content: space-between; padding: 11px 13px 11px 20px; border: 1px solid rgba(245,241,233,.3); border-radius: 999px; color: var(--cream); background: rgba(58,24,13,.68); box-shadow: 0 12px 40px rgba(33,28,25,.14); backdrop-filter: blur(14px); transform: translateX(-50%); transition: background .25s, top .25s; }
     .site-header.scrolled { top: 9px; background: rgba(58,24,13,.92); }
-    .logo { display: flex; align-items: center; gap: 10px; font-family: "Space Grotesk", sans-serif; font-size: .92rem; font-weight: 600; letter-spacing: .06em; }
-    .logo-mark { position: relative; width: 28px; height: 28px; display: block; border-radius: 9px; background: var(--green); overflow: hidden; }
-    .logo-mark::before { content: ""; position: absolute; right: -2px; top: 3px; width: 15px; height: 14px; border-radius: 50% 50% 0 50%; background: var(--blue); }
-    .logo-mark::after { content: ""; position: absolute; right: 1px; bottom: 1px; width: 16px; height: 14px; border-radius: 50% 50% 50% 0; background: var(--orange); }
-    .logo b { color: var(--coral); }
+    .logo { display: flex; align-items: center; flex-shrink: 0; }
+    .header-logo { display: block; width: clamp(175px, 18vw, 225px); height: auto; }
+    .footer-logo { display: block; width: 210px; max-width: 100%; height: auto; }
     .nav-links { display: flex; align-items: center; gap: 27px; font-size: .75rem; font-weight: 600; }
     .nav-links > a:not(.nav-cta) { position: relative; }
     .nav-links > a:not(.nav-cta)::after { content: ""; position: absolute; left: 0; bottom: -5px; width: 100%; height: 1px; background: var(--coral); transform: scaleX(0); transition: transform .25s; }
@@ -155,6 +153,7 @@
 
     @media (max-width: 560px) {
       .container, .site-header { width: calc(100% - 28px); }
+      .header-logo { width: 175px; }
       .hero { min-height: 700px; align-items: flex-end; padding-bottom: 30px; background-position: 62% center; }
       .hero-card { padding: 28px 22px; border-radius: 2px 24px 24px 24px; }
       h1 { font-size: clamp(2.65rem, 13.7vw, 3.8rem); }
@@ -180,7 +179,7 @@
 </head>
 <body>
   <header class="site-header" data-header>
-    <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true"></span><span>BAREICON<b>.CLUB</b></span></a>
+    <a class="logo" href="#top" aria-label="Bareicon Club home"><img class="header-logo" src="bareicon-club-logo.png" alt="Bareicon Club"></a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span class="sr-only">Open navigation</span></button>
     <nav class="nav-links" id="site-nav"><a href="#services">Services</a><a href="#work">Meet the Club</a><a href="#process">Process</a><a class="nav-cta" href="#contact">Start a project</a></nav>
   </header>
@@ -207,7 +206,7 @@
     <section class="contact" id="contact"><div class="container"><div class="contact-card reveal"><p class="eyebrow">Your brand could be next</p><h2>Let’s make something<br>worth noticing.</h2><p>Have a website, menu, or digital idea in mind? Tell us about it, and we’ll help you find a clear next step.</p><a class="button" href="mailto:hello@bareiconclub.com?subject=New%20Bareicon%20Club%20Project"><span>hello@bareiconclub.com</span><svg class="button-arrow button-arrow-up" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M7 5h8v8"/></svg></a></div></div></section>
   </main>
 
-  <footer><div class="container footer-inner"><a class="logo" href="#top"><span class="logo-mark"></span><span>BAREICON<b>.CLUB</b></span></a><span>Helping brands make a bigger impression.</span><div class="footer-links"><a href="#services">Services</a><a href="#work">Work</a><a href="mailto:hello@bareiconclub.com">Email</a></div></div></footer>
+  <footer><div class="container footer-inner"><a class="logo" href="#top" aria-label="Bareicon Club home"><img class="footer-logo" src="bareicon-club-logo.png" alt="Bareicon Club"></a><span>Helping brands make a bigger impression.</span><div class="footer-links"><a href="#services">Services</a><a href="#work">Work</a><a href="mailto:hello@bareiconclub.com">Email</a></div></div></footer>
 
   <script>
     const header = document.querySelector('[data-header]');
